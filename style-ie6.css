@@ -1,0 +1,74 @@
+/* ------------------------------------
+---- Stylesheet for IE6 and lower  ----
+---- Original Author: George Young ----
+----   Creation Date: 06/11/2007   ----
+----    Webexpectations.com Ltd    ----
+-------------------------------------*/
+
+
+/* - Fix hasLayout - */
+a,
+div#header,
+ul#navbar,
+div#ash,
+div#signposts,
+div.news,
+div#content,
+div#footer div.shade_right {
+  height:1%;
+}
+
+/* - Set min-heights - */
+div#flash,
+div#flashback {
+  height:250px;
+}
+div#signposts div.panel div.panel {
+  height:140px;
+}
+div#main {
+  height:160px;
+}
+div#content {
+  height:480px;
+}
+div#side div.firstPanel,
+div.first div.panel {
+  height:160px;
+}
+
+div#text div.panel form textarea, div#text div.panel form select, div#text div.panel form input.text {
+  width:200px;
+}
+
+
+/* - Fix PNGs - */
+img {
+  behavior:url('/_htc/png.htc');
+}
+ul#navbar li ul {
+  background:#939495;
+}
+
+/* - Min- and max-width emulation - */
+div#holder {
+  width:769px;
+  width:expression(document.documentElement.clientWidth < 779 ? "769px" : document.documentElement.clientWidth > 995 ? "975px" : "auto");
+}
+
+/* - Fix miscellaneous inconsistencies - */
+div#signposts div.solutions {
+  padding:0 3px;
+}
+div#content {
+  margin:0 0 0 23%;
+}
+div#text {
+  margin:0 215px 0 0;
+  height: 1%;
+}
+
+ 
+.panel .photo img {
+  display:none;
+}
